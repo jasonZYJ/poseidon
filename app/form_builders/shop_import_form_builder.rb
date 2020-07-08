@@ -1,0 +1,2 @@
+class ShopImportFormBuilder < FormBuilder
+end

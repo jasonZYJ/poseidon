@@ -1,0 +1,3 @@
+<%= action_buttons %>
+<%= create_lease_button if outer.is_a?(Agreement) %>
+<%= next_state_buttons(outer,outer.awaiting_approval? && (outer.workflow.nil? || outer.next_approvers.include?(current_user))? [] : [:approve,:decline]) if outer.is_a?(Lease) %>

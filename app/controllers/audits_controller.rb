@@ -1,0 +1,2 @@
+class AuditsController < ResourcesController
+end

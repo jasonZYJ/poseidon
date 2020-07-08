@@ -1,0 +1,7 @@
+<div class="col-sm-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <% sidebar_feature_resources.each do |s| %>
+        <li><a href="<%= url_for(s) %>"><i class="fa fa-home fa-fw"></i>&nbsp;<%= s.model_name.human %></a></li>
+    <% end %>
+  </ul>
+</div>

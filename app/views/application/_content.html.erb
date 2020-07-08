@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <div class="row">
+    <%= render 'sidebar' if current_organisation || current_user.try(:is_administrator?) %>
+    <div class="col-sm-9 col-md-10 <%=current_user ? "col-sm-offset-3  col-md-offset-2" :"col-sm-offset-1  col-md-offset-1"%> main">
+      <%= render 'application/breadcrumbs' if current_user%>
+      <%= yield %>
+    </div>
+  </div>
+</div>

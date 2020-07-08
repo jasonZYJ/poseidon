@@ -1,0 +1,4 @@
+class AttachmentsController < ResourcesController
+
+
+end

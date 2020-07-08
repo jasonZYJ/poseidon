@@ -1,0 +1,23 @@
+<div class="page-breadcrumbs page-header">
+  <ul class="breadcrumb">
+    <% nests.each_with_index do |r, i| %>
+        <li>
+          <%= link_to_unless_current r.class.model_name.human.pluralize,
+                                     send("#{(nests.take(i) + [r.class]).first.try(:name).try(:tableize)}_path") %>
+        </li>
+        <li>
+          <%= link_to_unless_current r.decorate, send("#{r.class.name.tableize.singularize}_path", nests.take(i + 1)) %>
+        </li>
+    <% end %>
+
+    <% if resource? %>
+      <li class="active">
+        <%= link_to_unless_current resource_class.model_name.human.pluralize, send("#{resource_class.to_s.tableize}_path")%>
+      </li>
+      <li class="active"><%= resource %></li>
+    <% else %>
+      <li class="active"><%= resource_class.model_name.human.pluralize %></li>
+    <% end %>
+  </ul>
+
+</div>

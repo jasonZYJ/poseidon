@@ -1,0 +1,24 @@
+﻿.easyPieChart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: grey;
+}
+.easyPieChart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.charFigure {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.charFigure:after {
+  margin-left: 0.1em;
+  font-size: .8em;
+}

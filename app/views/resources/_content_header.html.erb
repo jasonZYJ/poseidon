@@ -1,0 +1,3 @@
+<%= render(partial: "#{outer.class.name.underscore.pluralize}/summary", object: outer.decorate) rescue render(partial: 'summary', object: outer.decorate) if nested? %>
+<%= render partial: 'modal' %>
+<%= render partial: nested? ? 'tabs' : 'index_tabs'%>

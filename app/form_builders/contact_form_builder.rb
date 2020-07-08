@@ -1,0 +1,3 @@
+class ContactFormBuilder < FormBuilder
+
+end

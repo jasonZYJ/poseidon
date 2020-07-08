@@ -1,0 +1,77 @@
+@import "variables";
+@import "session";
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "bootstrap3-editable/bootstrap-editable";
+@import "dataTables/jquery.dataTables";
+@import "dataTables/extras/dataTables.colReorder";
+@import "dataTables/bootstrap/3/jquery.dataTables.bootstrap";
+@import "select2";
+@import "select2-bootstrap";
+@import "dashboard";
+@import 'bootstrap-datetimepicker';
+@import "charts";
+@import "gritter";
+@import "gflash";
+@import "breadcrumbs";
+@import "select.dataTables.min";
+
+.navbar-brand {
+  background-image: url("logo.png");
+  background-repeat: no-repeat;
+  width: 170px;
+  background-size: 100%;
+  margin-top: 4px;
+  margin-left: -8px !important;
+  height: 50px;
+}
+
+.balance-title {
+  font-weight: bold;
+  padding-right: 2em;
+  padding-left: 2em;
+  padding-top: 2px;
+}
+
+.balance-label {
+  padding-top: 2px;
+}
+
+.balance_item {
+  display: inline-block;
+}
+
+.datepicker {
+  z-index: 9999 !important;
+}
+
+table.dataTable thead .sorting_asc {
+  background-image: none;
+}
+
+table.dataTable thead .sorting_desc {
+  background-image: none;
+}
+
+table.dataTable thead .sorting_asc_disabled {
+  background-image: none;
+}
+
+table.dataTable thead .sorting_desc_disabled {
+  background-image: none;
+}
+
+table.dataTable thead .sorting {
+  background-image: none;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  font-weight: bold;
+  color: #337ab7;
+}
+
+.form-control {
+  color: inherit;
+}

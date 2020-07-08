@@ -1,0 +1,12 @@
+<%= render partial: 'content_header' %>
+<div class="panel panel-default">
+  <div class="panel-heading"><%= resource_class.model_name.human %></div>
+  <div class="panel-body"><%= render 'table' %></div>
+  <div class="panel-footer"><%= render 'table_footer' %></div>
+</div>
+
+<% content_for :footer do %>
+    <%= render 'content_footer' %>
+<% end %>
+
+

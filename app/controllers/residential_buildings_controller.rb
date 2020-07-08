@@ -1,0 +1,3 @@
+class ResidentialBuildingsController < BuildingSitesController
+
+end

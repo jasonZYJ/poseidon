@@ -1,0 +1,2 @@
+class CommissionsController < ResourcesController
+end

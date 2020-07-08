@@ -1,0 +1,3 @@
+class WorkflowLogFormBuilder < FormBuilder
+
+end

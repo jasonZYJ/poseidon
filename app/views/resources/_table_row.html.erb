@@ -1,0 +1,8 @@
+<tr id="<%= resource.id %>" class="<%= resource_class.name.underscore.gsub('/', '_') %>_row">
+  <% inline_editor = inline_editor_for(resource.decorate,self)%>
+	<% column_names.each do |column| %>
+	  <td class=" <%= cell_classes(column) %>" resource-link = "<%= resource_cell_link(resource) %>">
+        <%=resource.decorator_class.inline_editing_names.include?(column) ? (inline_editor.send column) : (resource.decorate.send column)%>
+	  </td>
+	<% end %>
+</tr>

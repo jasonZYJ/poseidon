@@ -1,0 +1,7 @@
+<%= simple_form_for (resource || resource_class.new) do |f| %>
+
+	<% form_column_names.each do |e| %>
+		<%= f.send e %>
+	<% end %>
+
+<% end %>

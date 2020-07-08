@@ -1,0 +1,19 @@
+(function() {
+    var modal = $("<%= escape_javascript(render('modal')) %>").appendTo("body"),
+            form = $("<%= escape_javascript(render('form')) %>").closest("form");
+
+    modal.children().wrapAll(form.clone().empty());
+
+    $("<h3><%= form_heading(:edit) %></h3>")
+            .appendTo(modal.find(".modal-header"));
+    form.find(".form-actions").detach().children()
+            .appendTo(modal.find(".modal-footer"));
+    form.children().appendTo(modal.find(".modal-body"));
+
+    modal.modal()
+            .on('hidden', function() {
+                $(this).remove();
+            });
+
+    $(".select2-container").width("100%");
+})();

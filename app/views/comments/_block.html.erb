@@ -1,0 +1,11 @@
+<div id="comment_<%= block.id %>" class="media comment">
+  <div class="media-object">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= block.creator %></h4>
+    <%= block.is_private? ? private_icon: ''%>
+    <div><%= sanitize block.body %></div>
+
+    <small class="pull-right"><%= block.created_at %></small>
+  </div>
+</div>

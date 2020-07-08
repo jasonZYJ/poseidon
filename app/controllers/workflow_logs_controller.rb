@@ -1,0 +1,2 @@
+class WorkflowLogsController < ResourcesController
+end

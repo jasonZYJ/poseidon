@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table id="resources_datatable" class="table table-hover dataTable">
+    <%= render :partial => 'table_header',
+               :locals => {
+                       :decorator_class => decorator_class,
+                       :column_names => column_names
+               }
+    %>
+
+    <%=
+        render :partial => 'table_body',
+               :locals => {
+                       :collection => collection,
+                       :resource_class => resource_class,
+                       :column_names => column_names
+               }
+    %>
+  </table>
+</div>
+<%= render partial: "table.js" %>

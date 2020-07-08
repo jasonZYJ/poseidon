@@ -1,0 +1,21 @@
+<div class="session-form">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="heading"><h2><%= t :forgot_password %></h2></div>
+    </div>
+
+    <%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: {method: :post}) do |f| %>
+        <div class="panel-body">
+          <%= f.error_notification %>
+          <%= f.input :email, required: true, autofocus: true %>
+
+          <div class="form-actions form-group">
+            <%= f.button :submit, t :reset_instructions %>
+          </div>
+        </div>
+    <% end %>
+    <div class="panel-footer">
+      <%= render "users/shared/links" %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+class ActivityFormBuilder < FormBuilder
+
+end

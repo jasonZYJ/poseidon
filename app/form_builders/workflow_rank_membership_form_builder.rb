@@ -1,0 +1,3 @@
+class WorkflowRankMembershipFormBuilder < FormBuilder
+
+end

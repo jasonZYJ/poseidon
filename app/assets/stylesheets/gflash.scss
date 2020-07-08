@@ -1,0 +1,33 @@
+.gritter-item-wrapper {
+  border-radius:  10px;
+}
+.gritter-item.gritter-css3 {
+  color: inherit;
+  background-color: inherit;
+}
+#gritter-notice-wrapper {
+  .gritter-title {
+    text-shadow: none;
+  }
+  .notice {
+    color: $alert-success-text;
+    background-color: $alert-success-bg;
+  }
+  .success {
+    color: $alert-success-text;
+    background-color: $alert-success-bg;
+  }
+  .progress {
+    color: $alert-info-text;
+    background-color: $alert-info-bg;
+    height: 100%; /* Needed because this style is otherwise clobbered by something else */
+  }
+  .warning {
+    color: $alert-warning-text;
+    background-color: $alert-warning-bg;
+  }
+  .error {
+    color: $alert-danger-text;
+    background-color: $alert-danger-bg;
+  }
+}

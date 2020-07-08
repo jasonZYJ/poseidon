@@ -1,0 +1,17 @@
+<div class="form-group panel panel-info">
+  <div class="panel-heading">Installments</div>
+  <div class="panel-body">
+    <% (1..investment_plan.duration).each do |y| %>
+      <div class="row">
+        <% (1..4).each do |q| %>
+            <% qt = "Q#{q+(y-1)*4}"%>
+            <div class="col-md-3"><%= qt %>:<input name="installments[<%= qt %>]" class="numeric decimal form-control" value="0" type="number"></div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  </div>
+</div>
+
+
+

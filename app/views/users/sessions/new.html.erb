@@ -1,0 +1,22 @@
+<div class="session-form">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="heading"><h2><%= t :log_in %></h2></div>
+    </div>
+
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="panel-body">
+          <%= f.input :email, required: false, autofocus: true %>
+          <%= f.input :password, required: false %>
+          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
+        <div class="form-group form-actions">
+            <%= f.button :submit, t(:log_in) %>
+        </div>
+        </div>
+    <% end %>
+    <div class="panel-footer">
+      <%= render "users/shared/links" %>
+    </div>
+  </div>
+</div>

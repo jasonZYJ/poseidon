@@ -1,0 +1,322 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+zh:
+  project_name: 商铺管理系统
+  login: 登陆
+  logout: 登出
+  "yes": "是"
+  "no": "否"
+  select: 请选择
+  summary: 信息简介
+  all: 所有
+  open: 有效的
+  visitations: 往来记录
+  attachments: 附件
+  comments: 评论
+  commissions: 提成
+  role_users: 用户
+  permissions: 权限
+  new: 新建
+  merge: 合并
+  import: 导入
+  export: 导出
+  search: 搜索
+  agreements: 意向协议
+  leases: 租赁合同
+  log_in: 登陆
+  forgot_password: 忘记密码?
+  reset_instructions: 重置密码
+  sign_up: 注册新用户
+  password_minimum: 最少%{min_length}位字符
+  password_confirmation: 确认密码
+  audits: 历史记录
+  contacts: 联系人
+  dashboard: 个人看板
+
+  activerecord:
+    models:
+      shop: 商铺
+      category: 业种
+      sub_category: 业种分类
+      shop_type: 商铺类型
+      brand: 品牌
+      user: 用户
+      organisation: 公司
+      agreement: 意向协议
+      lease: 租赁合同
+      workflow: 审批流程
+      role: 角色
+      contact: 联系人
+      visitation: 往来记录
+      attachment: 附件
+      comment: 评论
+      workflow_rank: 审批级别
+      workflow_rank_membership: 审批角色
+      role_user: 用户
+      permission: 权限
+      audit:  历史记录
+      commission: 销售提成
+      attachment: 附件
+    attributes:
+      organisation:
+        new: 新建
+        edit: 编辑
+        name: 名称
+        city: 城市
+        province: 省份
+        telephone: 联系电话
+        address: 地址
+        bank: 开户行
+        account: 银行账号
+        legal_representative: 法人
+        contact: 联系人
+        look: 查看
+      category:
+        new: 新建
+        edit: 编辑
+        look: 查看详情
+        name: 名称
+        code: 编码
+      sub_category:
+        new: 新建
+        name: 名称
+        code: 编码
+      shop_type:
+        new: 新建
+        name: 名称
+      brand:
+        new: 新建
+        name: 名称
+        grade: 等级
+        sub_category: 业种分类
+        category: 业种
+        organisation: 公司
+      shop:
+        new: 新建
+        building: 楼号
+        level: 楼层
+        number: 铺位编号
+        sub_category: 业态分类
+        category: 业态大类
+        type: 商铺类型
+        agreements: 意向协议
+        leases: 租赁合同
+        split: 拆分店铺
+        feature: 特征
+        area: 套内面积
+        bay: 开间
+        bearing: 承重
+        depth: 进深
+        max_height: 净高(最大)
+        min_height: 净高(最小)
+        temporary: 临时铺面
+        remark: 备注
+        workflow: 默认审批流程
+      agreement:
+        open: 有效的
+        closed: 失效的
+        look: 详情
+        number: 协议书编号
+        lease: 租赁合同
+        brand: 品牌
+        shop: 商铺
+        creator: 创建人
+        responsible_person: 负责人
+        required_area: 所需面积
+        expected_rent: 期望租金
+        management_type: 经营主体
+        expanding_region: 扩展区域
+        opened_stores: 已开店数
+        renovation_standard: 装修标准
+        expanding_stores: 拓展数量
+        created_at: 创建时间
+      visitation:
+        contact: 联系人
+        remark: 备注
+        creator: 接待人
+        created_at: 接待时间
+        duration: 时长(小时)
+      attachment:
+        file_name: 文件名
+        caption: 描述
+      comment:
+        is_private: 私密
+        body: 内容
+      lease:
+        look: 详情
+        lease_number: 合同号
+        state: 状态
+        agreement: 意向协议
+        start_date: 起始日期
+        end_date: 截止日期
+        payment_terms: 支付方式
+        rent_free_days: 免租期
+        deposit: 租赁保证金
+        quality_bond: 质量保证金
+        daily_rate: 日租金
+        parking: 免费停车位
+        advertising_spot: 免费广告位
+        storage_space: 免费仓储空间
+        open: 已创建
+        awaiting_approval: 等待审批的
+        approved: 审核通过
+        declined: 已拒绝
+        cancel: 取消
+        cancelled: 已取消
+        submit: 提交
+        approve: 批准
+        decline: 拒绝
+      commission:
+        start_date: 开始日期
+        end_date: 结束日期
+        proportion: 抽成比例(%)
+      contact:
+        full_name: 姓名
+        position: 职位
+        email: 邮件
+        telephone: 联系电话
+        mobile: 手机
+        organisation: 公司
+        legal_representative: 法人
+      workflow:
+        look: 详情
+        name: 名称
+        is_default: 默认
+        ranks: 审批级别
+      workflow_rank:
+        look: 详情
+        rank: 级别
+        minimum_approvers: 所需审批人
+        roles: 包含角色
+        delete: 删除
+      workflow_rank_membership:
+        look: 详情
+        is_compulsory: 必要审核人
+        role: 角色
+        delete: 删除
+      role:
+        look: 查看
+        name: 名称
+        users: 包含用户
+      role_user:
+        delete: 删除
+        user: 用户名
+        position: 职位
+      permission:
+        can_create: 可创建
+        can_update: 可编辑
+        can_delete: 可删除
+        can_transition: 可以改变状态
+        can_read: 可见
+        role: 角色
+        resource_type: 对象
+      user:
+        look: 查看
+        edit: 编辑
+        name: 姓名
+        position: 职位
+        email: 邮件
+        mobile: 手机
+        organisation: 公司
+        password: 密码
+        remember_me: 记住我
+        password_confirmation: 确认密码
+      audit:
+        user: 用户
+        action: 操作
+        audited_changes: 变动
+      attachment:
+        file: 文件
+        caption: 描述
+
+  form:
+      organisation:
+        heading:
+          edit: 编辑公司信息
+          new: 新建公司
+      brand:
+        heading:
+          edit: 编辑品牌信息
+          new: 新建品牌
+      shop:
+        heading:
+          new: 新建商铺
+      contact:
+        heading:
+          new: 新建联系人
+      category:
+        heading:
+          new: 新建业务种类
+      sub_category:
+        heading:
+          new: 新建业务分类
+      visitation:
+        heading:
+          new: 新的往来记录
+      lease:
+        heading:
+          new: 新的租赁合同
+      agreement:
+        heading:
+          new: 新的意向协议
+      attachment:
+        heading:
+          new: 新的附件
+      workflow:
+        heading:
+          new: 新的审批流程
+      role:
+        heading:
+          new: 新的角色
+      role_user:
+        heading:
+          new: 添加用户
+      permission:
+        heading:
+          new: 添加权限
+
+
+  helpers:
+    submit:
+      create: "创建%{model}"
+      update: "更新%{model}信息"
+
+  date:
+    formats:
+      default: "%Y-%m-%d"
+    order: 厕所
+  time:
+    formats:
+      default: "%Y-%m-%d %H:%M"
+
+  actions:
+    update: 更新
+    from: 从
+    to: 变更为
+
+  activites:
+    contact_brands_count: 联系品牌数
+    agreement_shops_count: 协议商铺数
+    agreement_brands_count: 协议品牌数
+    lease_shops_count:  签约商铺数
+    lease_brands_count: 签约品牌数
+    lease_amounts_count:  租金总额

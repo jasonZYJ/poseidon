@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Poseidon" uuid="60e1d320-f36d-41ef-b895-81a1a107a49f">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>Poseidon_DEV.pg_catalog Poseidon_DEV.public</schema-pattern>
+      <default-schemas>Poseidon_DEV.public</default-schemas>
+    </data-source>
+  </component>
+</project>

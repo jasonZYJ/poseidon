@@ -1,0 +1,11 @@
+<tbody>
+  <%=
+    render :partial => 'table_row',
+           :collection => collection,
+           :as => :resource,
+           :locals => {
+             :resource_class => resource_class,
+             :column_names => column_names
+           }
+  %>
+</tbody>

@@ -1,0 +1,22 @@
+<div class="panel panel-success summary">
+  <div class="panel-heading"><%=t(:summary)%></div>
+  <div class="panel-body">
+    <% cols = summary_names(summary) %>
+    <% cols.each do |col| %>
+        <div class="col-xs-<%= 12 / cols.size %>">
+          <dl class="capitalize dl-horizontal">
+            <% col.each do |sn| %>
+                <dt class="<%= sn %>"><%= human_attr(summary.class, sn) %></dt>
+                <dd class="<%= sn %>"><%= inline_editor_for(summary.source, self).send(sn, {:disabled => !summary.class.form_element_names.include?(sn.to_s)}) %></dd>
+            <% end %>
+          </dl>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render :partial => 'balance', :object => summary %>
+
+
+
+

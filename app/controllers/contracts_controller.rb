@@ -1,0 +1,3 @@
+class ContractsController < ResourcesController
+
+end

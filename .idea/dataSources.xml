@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="416766033">
+    <data-source source="LOCAL" name="Poseidon" uuid="60e1d320-f36d-41ef-b895-81a1a107a49f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/Poseidon_DEV</jdbc-url>
+    </data-source>
+  </component>
+</project>

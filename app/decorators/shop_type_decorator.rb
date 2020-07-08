@@ -1,0 +1,3 @@
+class ShopTypeDecorator < ResourceDecorator
+
+end

@@ -1,0 +1,15 @@
+<%= javascript_tag do %>
+$('#resources_datatable tr:first ').prepend("<td class='TableHeading'></td>");
+
+$('#resources_datatable tr:not(:first)').each(function(){
+    $(this).prepend("<td class='tdMiddleCells'></td>");
+
+});
+
+$('#resources_datatable').dataTable({
+    <%= render "datatables/basic_configs.js" %>
+    <%= render "datatables/checkbox_selection.js" %>
+
+});
+
+<% end %>

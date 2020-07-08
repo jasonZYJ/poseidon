@@ -1,0 +1,2 @@
+class ShopTypesController < ResourcesController
+end

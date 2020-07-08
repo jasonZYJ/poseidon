@@ -1,0 +1,8 @@
+<%  if resource_class.try(:states).present? %>
+<ul class="nav nav-tabs">
+  <%= theme_tab "#{t(:all)}#{human(resource_class).pluralize.titleize}", with_nesting(resource_class) %>
+  <% resource_class.states.each do |s| %>
+      <%= theme_tab "#{resource_class.human_attribute_name(s).titleize}#{human(resource_class).pluralize.titleize}", [s, with_nesting(resource_class)].flatten %>
+  <% end %>
+</ul>
+<% end %>

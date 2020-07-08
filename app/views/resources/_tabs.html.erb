@@ -1,0 +1,6 @@
+<ul class="nav nav-tabs">
+  <% tab_names(outer).each do |d| %>
+      <%= theme_tab "#{t(d)} (#{outer.send(d).count})", [nest_to(outer), d].flatten %>
+  <% end %>
+
+</ul>
